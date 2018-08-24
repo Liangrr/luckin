@@ -1,0 +1,21 @@
+.send-title{
+    border:1px solid #7ca7d2;
+    border-radius: 5px;
+    font-size:11px;
+    color:#7ca7d2;
+    display: flex;
+    box-sizing:border-box;
+    height:26px;    
+    width:120px;
+}
+.send-header span{
+    flex:1;
+    line-height:25px;
+    height:25px;
+    text-align:center;
+    border-radius: 5px 0 0 5px;
+}
+.send-header .active{
+    color:#fff;
+    background:#7ca7d2;
+}

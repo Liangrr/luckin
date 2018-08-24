@@ -9,7 +9,6 @@ const Brief = Item.Brief;
 export default class Datas extends Component {
   constructor({history}){
     super();
-    console.log(history)
   }
   render() {
     return (
@@ -18,7 +17,7 @@ export default class Datas extends Component {
         <Item className="first-item"
           arrow="dom"
           multipleLine
-          onClick={() => {}}
+          onClick={() => {this.props.history.push('/home/sendtype')}}
           platform="android"
         >
           <b>西部硅谷店</b><Brief>距您472m</Brief>
@@ -39,7 +38,7 @@ export default class Datas extends Component {
         <Item
           arrow="dom"
           multipleLine
-          onClick={() => {}}
+          onClick={() => {this.props.history.push('/home/wallet')}}
           platform="android"
         >
           咖啡钱包<Brief>COFFEE WALLET</Brief>

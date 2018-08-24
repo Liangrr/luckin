@@ -12,6 +12,10 @@ import Mine from './pages/mine/root/Index'
 // tabs
 import Tabs from './common/tabs/Tabs'
 
+// 引入首页的子页面
+import Company from './pages/home/list/listchilds/company'
+import Sendtype from './pages/home/list/listchilds/sendType'
+import Wallet from './pages/home/list/listchilds/wallet'
 
 class App extends Component {
   render() {
@@ -23,7 +27,11 @@ class App extends Component {
           <Route path="/" exact render={()=>{
             return <Redirect to="/home"/>
           }}/>
-          <Route path="/home" component={Home}/>
+          <Route path="/home" exact component={Home}/>
+          <Route path="/home/sendtype" component={Sendtype}/>
+          <Route path="/home/company" component={Company}/>
+          <Route path="/home/wallet" component={Wallet}/>
+
           <Route path="/menu" component={Menu}/>
           <Route path="/order" component={Order}/>
           <Route path="/car" component={Car}/>
