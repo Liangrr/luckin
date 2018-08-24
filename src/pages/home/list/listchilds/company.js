@@ -1,14 +1,13 @@
 import React, {Component} from 'react'
-
+import './company.css'
 import { NavBar,Icon, List  } from 'antd-mobile';
 
 const Item = List.Item;
-const Brief = Item.Brief;
 
 export default class Company extends Component{
     render(){
         return (
-            <div>
+            <div className="company">
                <NavBar
                 mode="light"
                 icon={<Icon type="left" />}

@@ -8,6 +8,9 @@
     height:26px;    
     width:120px;
 }
+.send-header{
+    border-bottom:1px solid #ccc;
+}
 .send-header span{
     flex:1;
     line-height:25px;
@@ -18,4 +21,13 @@
 .send-header .active{
     color:#fff;
     background:#7ca7d2;
+}
+.sendtype{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    z-index:200;
+    width:100%;
+    background: #fff;
 }
